@@ -1,0 +1,271 @@
+header {
+	margin: 0;
+}
+
+.header {
+	background-color: #CCDBDC;
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.header_label {
+	color: #003249;
+	font-size: 18px;
+	font-family: Helvetica, sans-serif;
+	margin-left: 20px;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.header_button {
+	position: absolute;
+	right: 30px;
+	width: 160px;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	background: #003249;
+	color:#CCDBDC;
+	font-family: Helvetica, sans-serif;
+	border-radius: 5px;
+	font-weight: bold;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	-webkit-transition-duration: 0.3s;
+
+}
+
+.header_button:hover, .header_button:focus, .header_button:active{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	color:#CCDBDC;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	width: 100%;
+	height: 500px;
+	background-color: #80CED7;
+	padding: 30px;
+	display: inline-block;
+	align-items: center;
+}
+
+.background-text {
+	font-size: 80px;
+	color: #003249;
+}
+
+h1 {
+	margin: 0%;
+}
+
+
+.background-button {
+	background:#003249;
+	position: absolute;
+	margin-top: 10px;
+	width: 160px;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: Helvetica, sans-serif;
+	color:#CCDBDC;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition-duration: 0.3s;
+}
+
+.background-button:hover, .background-button:focus, .background-button:active{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	color:#CCDBDC;
+}
+
+footer {
+	background-color: #9AD1D4;
+	padding-top: 50px;
+}
+
+.footer-wrapper {
+	width: 1140px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+
+}
+
+.footer-content {
+	width: 33.3%;
+}
+
+h3 {
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.footer-content p{
+	font-family: helvetica, sans-serif;
+	color:#003249;
+	width:190px;
+	margin: auto;
+	padding: 7px;
+}
+
+.footer-content ul{
+	text-align: center;
+}
+
+.list {
+	padding: 0;
+}
+
+.list li{
+	width: auto;
+	text-align: center;
+	list-style-type: none;
+	padding: 7px;
+	position: relative;
+}
+
+.list li::before{
+	content: '';
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 100%;
+	width: 0;
+	height: 2px;
+	background: #003249;
+	transition-duration: .5s;
+}
+
+.list li:hover::before{
+	width: 70px;
+}
+
+.social-icons {
+	text-align: center;
+	padding: 0;
+}
+
+.social-icons li{
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+}
+
+.social-icons i{
+	color: #003249;
+	font-size: 25px;
+}
+
+a{
+	font-family: Helvetica, sans-serif;
+	color: #003249;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #007EA7;
+}
+
+.social-icons i:hover{
+	color: #CCDBDC;
+}
+
+.bottom-bar{
+	background: #003249;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 50px;
+}
+
+.bottom-bar p{
+	color: #CCDBDC;
+	margin: 0;
+	font-size: 16px;
+	padding: 7px;
+}
+
+.container{
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+	width: 100%;
+	height: 500px;
+	padding: 0 8%;
+}
+
+.container h1{
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 60px;
+	font-weight: 600;
+	position: relative;
+}
+
+.container h1::after{
+	content: '';
+	background: #007EA7;
+	width: 100px;
+	height: 5px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.row{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+
+.service{
+	text-align: center;
+	padding: 25px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	background: transparent;
+}
+
+.service i{
+	font-size: 40px;
+	margin-bottom: 10px;
+	color:#007EA7;
+}
+
+.service h2{
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.service:hover{
+	background: #007EA7;
+	color: #fff;
+	transform: scale(1.05);
+}
+
+.service:hover i{
+	color:#fff;
+}
